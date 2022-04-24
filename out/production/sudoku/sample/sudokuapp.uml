@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="601.6098519536017" y="479.0">sample.controller.PlayController</node>
+    <node x="785.8749427655678" y="344.0">sample.model.DetermineColour</node>
+    <node x="488.708276098901" y="727.0">sample.Main</node>
+    <node x="207.90819597069572" y="344.0">sample.model.XSudoku</node>
+    <node x="748.4494047619048" y="0.0">sample.controller.ModifierController</node>
+    <node x="484.21674679487205" y="808.0">sample.controller.SplashController</node>
+    <node x="519.9285714285714" y="251.0">sample.model.Sudoku</node>
+    <node x="390.0" y="632.0">sample.controller.DetailsController</node>
+    <node x="0.0" y="632.0">sample.controller.ComputerController</node>
+    <node x="155.40819597069572" y="168.0">sample.model.Killer</node>
+    <node x="836.7708333333334" y="632.0">sample.controller.KillerController</node>
+    <node x="335.21674679487205" y="808.0">sample.placeholder</node>
+    <node x="337.9081959706957" y="344.0">sample.model.KingSudoku</node>
+    <node x="785.6994047619048" y="85.0">sample.model.Modifier</node>
+    <node x="605.8124427655678" y="344.0">sample.model.TextFieldStyle</node>
+    <node x="202.0" y="632.0">sample.controller.SchemeController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="sample.model.Sudoku" target="sample.controller.PlayController" relationship="GENERALIZATION">
+      <point x="37.875" y="15.5" />
+      <point x="608.3035714285714" y="323.0" />
+      <point x="758.3124427655678" y="323.0" />
+      <point x="758.3124427655678" y="427.0" />
+      <point x="702.9015186202683" y="427.0" />
+      <point x="29.791666666666657" y="-15.5" />
+    </edge>
+    <edge source="sample.controller.SchemeController" target="sample.controller.PlayController" relationship="TO_ONE">
+      <point x="-42.0" y="-15.5" />
+      <point x="244.0" y="611.0" />
+      <point x="312.71674679487205" y="611.0" />
+      <point x="312.71674679487205" y="541.0" />
+      <point x="625.443185286935" y="541.0" />
+      <point x="-47.66666666666666" y="15.5" />
+    </edge>
+    <edge source="sample.Main" target="sample.controller.ComputerController" relationship="DEPENDENCY">
+      <point x="-35.0" y="-15.5" />
+      <point x="495.708276098901" y="705.0" />
+      <point x="91.0" y="705.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.KillerController" target="sample.controller.PlayController" relationship="DEPENDENCY">
+      <point x="-42.57142857142861" y="-15.5" />
+      <point x="868.6994047619048" y="601.0" />
+      <point x="510.96674679487205" y="601.0" />
+      <point x="510.96674679487205" y="531.0" />
+      <point x="673.1098519536017" y="531.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.KillerController" target="sample.model.DetermineColour" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="911.2708333333334" y="541.0" />
+      <point x="892.6723519536017" y="541.0" />
+      <point x="892.6723519536017" y="457.0" />
+      <point x="867.8749427655678" y="457.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.ComputerController" target="sample.model.KingSudoku" relationship="CREATE">
+      <point x="-45.5" y="-15.5" />
+      <point x="45.5" y="571.0" />
+      <point x="402.9081959706957" y="571.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.PlayController" target="sample.model.Sudoku" relationship="TO_MANY">
+      <point x="-17.87499999999997" y="-15.5" />
+      <point x="655.2348519536017" y="417.0" />
+      <point x="489.4081959706957" y="417.0" />
+      <point x="489.4081959706957" y="323.0" />
+      <point x="478.4081959706957" y="323.0" />
+      <point x="478.4081959706957" y="303.0" />
+      <point x="557.8035714285714" y="303.0" />
+      <point x="-12.625" y="15.5" />
+    </edge>
+    <edge source="sample.controller.PlayController" target="sample.model.Sudoku" relationship="TO_ONE">
+      <point x="-29.79166666666663" y="-15.5" />
+      <point x="643.3181852869351" y="427.0" />
+      <point x="478.4081959706957" y="427.0" />
+      <point x="478.4081959706957" y="303.0" />
+      <point x="557.8035714285714" y="303.0" />
+      <point x="-12.625" y="15.5" />
+    </edge>
+    <edge source="sample.controller.PlayController" target="sample.model.TextFieldStyle" relationship="CREATE">
+      <point x="5.958333333333343" y="-15.5" />
+      <point x="679.068185286935" y="397.0" />
+      <point x="641.3124427655678" y="397.0" />
+      <point x="-35.5" y="15.5" />
+    </edge>
+    <edge source="sample.controller.KillerController" target="sample.controller.PlayController" relationship="TO_ONE">
+      <point x="-63.85714285714289" y="-15.5" />
+      <point x="847.4136904761905" y="611.0" />
+      <point x="312.71674679487205" y="611.0" />
+      <point x="312.71674679487205" y="541.0" />
+      <point x="625.443185286935" y="541.0" />
+      <point x="-47.66666666666666" y="15.5" />
+    </edge>
+    <edge source="sample.model.Modifier" target="sample.controller.ModifierController" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="839.6994047619048" y="58.0" />
+      <point x="855.9494047619048" y="58.0" />
+      <point x="21.5" y="15.5" />
+    </edge>
+    <edge source="sample.Main" target="sample.controller.DetailsController" relationship="DEPENDENCY">
+      <point x="-7.0" y="-15.5" />
+      <point x="523.708276098901" y="685.0" />
+      <point x="470.0" y="685.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.SchemeController" target="sample.controller.PlayController" relationship="DEPENDENCY">
+      <point x="42.0" y="-15.5" />
+      <point x="328.0" y="601.0" />
+      <point x="510.96674679487205" y="601.0" />
+      <point x="510.96674679487205" y="531.0" />
+      <point x="673.1098519536017" y="531.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.KillerController" target="sample.model.Modifier" relationship="DEPENDENCY">
+      <point x="21.285714285714278" y="-15.5" />
+      <point x="932.5565476190477" y="591.0" />
+      <point x="971.770776098901" y="591.0" />
+      <point x="971.770776098901" y="147.0" />
+      <point x="839.6994047619048" y="147.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.PlayController" target="sample.model.KingSudoku" relationship="CREATE">
+      <point x="-41.708333333333286" y="-15.5" />
+      <point x="631.4015186202683" y="437.0" />
+      <point x="402.9081959706957" y="437.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.model.KingSudoku" target="sample.model.Sudoku" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="402.9081959706957" y="323.0" />
+      <point x="297.3333333333333" y="323.0" />
+      <point x="297.3333333333333" y="313.0" />
+      <point x="532.5535714285713" y="313.0" />
+      <point x="-37.875" y="15.5" />
+    </edge>
+    <edge source="sample.controller.KillerController" target="sample.model.Killer" relationship="CREATE">
+      <point x="-21.285714285714334" y="-15.5" />
+      <point x="889.985119047619" y="551.0" />
+      <point x="197.40819597069572" y="551.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.PlayController" target="sample.model.XSudoku" relationship="CREATE">
+      <point x="-53.62499999999994" y="-15.5" />
+      <point x="619.4848519536017" y="447.0" />
+      <point x="262.9081959706957" y="447.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.placeholder" target="sample.Main" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="399.71674679487205" y="783.0" />
+      <point x="530.708276098901" y="783.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.model.XSudoku" target="sample.model.Sudoku" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="262.9081959706957" y="323.0" />
+      <point x="297.3333333333333" y="323.0" />
+      <point x="297.3333333333333" y="313.0" />
+      <point x="532.5535714285713" y="313.0" />
+      <point x="-37.875" y="15.5" />
+    </edge>
+    <edge source="sample.controller.PlayController" target="sample.model.Sudoku" relationship="CREATE">
+      <point x="-5.958333333333314" y="-15.5" />
+      <point x="667.1515186202683" y="407.0" />
+      <point x="595.3124427655678" y="407.0" />
+      <point x="595.3124427655678" y="323.0" />
+      <point x="581.4285714285714" y="323.0" />
+      <point x="581.4285714285714" y="313.0" />
+      <point x="583.0535714285714" y="313.0" />
+      <point x="12.625" y="15.5" />
+    </edge>
+    <edge source="sample.controller.ComputerController" target="sample.controller.PlayController" relationship="DEPENDENCY">
+      <point x="75.83333333333331" y="-15.5" />
+      <point x="166.83333333333331" y="601.0" />
+      <point x="510.96674679487205" y="601.0" />
+      <point x="510.96674679487205" y="531.0" />
+      <point x="673.1098519536017" y="531.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.DetailsController" target="sample.controller.PlayController" relationship="DEPENDENCY">
+      <point x="40.0" y="-15.5" />
+      <point x="510.96674679487205" y="531.0" />
+      <point x="673.1098519536017" y="531.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.PlayController" target="sample.model.TextFieldStyle" relationship="TO_MANY">
+      <point x="17.875" y="-15.5" />
+      <point x="690.9848519536017" y="417.0" />
+      <point x="712.3124427655678" y="417.0" />
+      <point x="35.5" y="15.5" />
+    </edge>
+    <edge source="sample.model.Sudoku" target="sample.model.Modifier" relationship="TO_MANY">
+      <point x="33.66666666666666" y="-15.5" />
+      <point x="604.0952380952381" y="225.0" />
+      <point x="982.770776098901" y="225.0" />
+      <point x="982.770776098901" y="147.0" />
+      <point x="988.270776098901" y="147.0" />
+      <point x="988.270776098901" y="137.0" />
+      <point x="875.6994047619048" y="137.0" />
+      <point x="36.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.PlayController" target="sample.Main" relationship="CREATE">
+      <point x="47.66666666666666" y="15.5" />
+      <point x="720.7765186202683" y="591.0" />
+      <point x="772.3209134615387" y="591.0" />
+      <point x="772.3209134615387" y="695.0" />
+      <point x="551.708276098901" y="695.0" />
+      <point x="21.0" y="-15.5" />
+    </edge>
+    <edge source="sample.controller.SplashController" target="sample.Main" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="563.216746794872" y="783.0" />
+      <point x="530.708276098901" y="783.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.ComputerController" target="sample.model.Sudoku" relationship="TO_ONE">
+      <point x="-15.166666666666629" y="-15.5" />
+      <point x="75.83333333333337" y="581.0" />
+      <point x="478.4081959706957" y="581.0" />
+      <point x="478.4081959706957" y="303.0" />
+      <point x="557.8035714285714" y="303.0" />
+      <point x="-12.625" y="15.5" />
+    </edge>
+    <edge source="sample.Main" target="sample.controller.KillerController" relationship="DEPENDENCY">
+      <point x="35.0" y="-15.5" />
+      <point x="565.708276098901" y="705.0" />
+      <point x="911.2708333333334" y="705.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.model.Sudoku" target="sample.model.Modifier" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="570.4285714285714" y="147.0" />
+      <point x="839.6994047619048" y="147.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.model.DetermineColour" target="sample.model.Modifier" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="867.8749427655678" y="147.0" />
+      <point x="839.6994047619048" y="147.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.DetailsController" target="sample.controller.PlayController" relationship="TO_ONE">
+      <point x="-40.0" y="-15.5" />
+      <point x="430.0" y="611.0" />
+      <point x="312.71674679487205" y="611.0" />
+      <point x="312.71674679487205" y="541.0" />
+      <point x="625.443185286935" y="541.0" />
+      <point x="-47.66666666666666" y="15.5" />
+    </edge>
+    <edge source="sample.controller.KillerController" target="sample.model.Modifier" relationship="TO_ONE">
+      <point x="63.85714285714283" y="-15.5" />
+      <point x="975.1279761904761" y="611.0" />
+      <point x="993.770776098901" y="611.0" />
+      <point x="993.770776098901" y="147.0" />
+      <point x="988.270776098901" y="147.0" />
+      <point x="988.270776098901" y="137.0" />
+      <point x="875.6994047619048" y="137.0" />
+      <point x="36.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.KillerController" target="sample.model.Modifier" relationship="TO_MANY">
+      <point x="42.571428571428555" y="-15.5" />
+      <point x="953.8422619047619" y="601.0" />
+      <point x="982.770776098901" y="601.0" />
+      <point x="982.770776098901" y="147.0" />
+      <point x="988.270776098901" y="147.0" />
+      <point x="988.270776098901" y="137.0" />
+      <point x="875.6994047619048" y="137.0" />
+      <point x="36.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.ModifierController" target="sample.model.Modifier" relationship="DEPENDENCY">
+      <point x="-21.5" y="15.5" />
+      <point x="812.9494047619048" y="58.0" />
+      <point x="803.6994047619048" y="58.0" />
+      <point x="-36.0" y="-15.5" />
+    </edge>
+    <edge source="sample.controller.PlayController" target="sample.model.DetermineColour" relationship="DEPENDENCY">
+      <point x="53.625" y="-15.5" />
+      <point x="726.7348519536017" y="457.0" />
+      <point x="867.8749427655678" y="457.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.Main" target="sample.controller.PlayController" relationship="DEPENDENCY">
+      <point x="7.0" y="-15.5" />
+      <point x="537.708276098901" y="685.0" />
+      <point x="560.5" y="685.0" />
+      <point x="560.5" y="601.0" />
+      <point x="510.96674679487205" y="601.0" />
+      <point x="510.96674679487205" y="531.0" />
+      <point x="673.1098519536017" y="531.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.PlayController" target="sample.model.Modifier" relationship="TO_MANY">
+      <point x="65.54166666666667" y="-15.5" />
+      <point x="738.6515186202683" y="447.0" />
+      <point x="982.770776098901" y="447.0" />
+      <point x="982.770776098901" y="147.0" />
+      <point x="988.270776098901" y="147.0" />
+      <point x="988.270776098901" y="137.0" />
+      <point x="875.6994047619048" y="137.0" />
+      <point x="36.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.ComputerController" target="sample.model.XSudoku" relationship="CREATE">
+      <point x="-75.83333333333326" y="-15.5" />
+      <point x="15.166666666666742" y="561.0" />
+      <point x="262.9081959706957" y="561.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.ComputerController" target="sample.controller.PlayController" relationship="TO_ONE">
+      <point x="45.5" y="-15.5" />
+      <point x="136.5" y="611.0" />
+      <point x="312.71674679487205" y="611.0" />
+      <point x="312.71674679487205" y="541.0" />
+      <point x="625.443185286935" y="541.0" />
+      <point x="-47.66666666666666" y="15.5" />
+    </edge>
+    <edge source="sample.controller.ModifierController" target="sample.model.Modifier" relationship="TO_MANY">
+      <point x="64.5" y="15.5" />
+      <point x="898.9494047619048" y="58.0" />
+      <point x="875.6994047619048" y="58.0" />
+      <point x="36.0" y="-15.5" />
+    </edge>
+    <edge source="sample.controller.PlayController" target="sample.model.Modifier" relationship="DEPENDENCY">
+      <point x="41.708333333333314" y="-15.5" />
+      <point x="714.818185286935" y="437.0" />
+      <point x="775.3749427655678" y="437.0" />
+      <point x="775.3749427655678" y="147.0" />
+      <point x="839.6994047619048" y="147.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.model.Sudoku" target="sample.model.Killer" relationship="CREATE">
+      <point x="-33.66666666666666" y="-15.5" />
+      <point x="536.7619047619047" y="225.0" />
+      <point x="197.40819597069572" y="225.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="sample.model.Killer" target="sample.model.Modifier" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="197.40819597069572" y="137.0" />
+      <point x="803.6994047619048" y="137.0" />
+      <point x="-36.0" y="15.5" />
+    </edge>
+    <edge source="sample.controller.PlayController" target="sample.controller.ModifierController" relationship="CREATE">
+      <point x="-65.5416666666666" y="-15.5" />
+      <point x="607.5681852869351" y="457.0" />
+      <point x="144.90819597069572" y="457.0" />
+      <point x="144.90819597069572" y="58.0" />
+      <point x="769.9494047619048" y="58.0" />
+      <point x="-64.5" y="15.5" />
+    </edge>
+    <edge source="sample.controller.ComputerController" target="sample.model.Sudoku" relationship="CREATE">
+      <point x="15.166666666666686" y="-15.5" />
+      <point x="106.16666666666669" y="591.0" />
+      <point x="500.40819597069566" y="591.0" />
+      <point x="500.4081959706957" y="323.0" />
+      <point x="581.4285714285714" y="323.0" />
+      <point x="581.4285714285714" y="313.0" />
+      <point x="583.0535714285714" y="313.0" />
+      <point x="12.625" y="15.5" />
+    </edge>
+    <edge source="sample.Main" target="sample.controller.SchemeController" relationship="DEPENDENCY">
+      <point x="-21.0" y="-15.5" />
+      <point x="509.708276098901" y="695.0" />
+      <point x="286.0" y="695.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6589057043073341" showDependencies="true" x="497.0" y="419.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

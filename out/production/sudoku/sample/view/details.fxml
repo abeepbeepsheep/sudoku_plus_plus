@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="387.0" prefWidth="458.0" style="-fx-background-color: #ecf188;"
+            stylesheets="@../../details.css" xmlns="http://javafx.com/javafx/15.0.1"
+            fx:controller="sample.controller.DetailsController">
+    <children>
+        <Button layoutX="386.0" layoutY="334.0" mnemonicParsing="false" onAction="#save" text="Save"/>
+        <TextField fx:id="authorTF" layoutX="26.0" layoutY="14.0" prefHeight="25.0" prefWidth="188.0"
+                   promptText="Author"/>
+        <TextField fx:id="sourceTF" layoutX="26.0" layoutY="58.0" prefHeight="25.0" prefWidth="402.0"
+                   promptText="Source"/>
+        <TextField fx:id="dateTF" layoutX="239.0" layoutY="14.0" prefHeight="25.0" prefWidth="188.0"
+                   promptText="Date Published (dd/MM/yyyy)"/>
+        <TextArea fx:id="descriptionTF" layoutX="26.0" layoutY="100.0" prefHeight="140.0" prefWidth="354.0"
+                  promptText="Description" wrapText="true"/>
+        <TextArea fx:id="commentTF" layoutX="26.0" layoutY="256.0" prefHeight="104.0" prefWidth="354.0"
+                  promptText="Comment" wrapText="true"/>
+    </children>
+</AnchorPane>

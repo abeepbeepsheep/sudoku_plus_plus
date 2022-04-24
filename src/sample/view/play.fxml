@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="1022.0" stylesheets="@../../main.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.PlayController">
+    <children>
+        <MenuBar prefHeight="25.0" prefWidth="1200.0" VBox.vgrow="NEVER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openNew" text="New">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#openPuzzle" text="Open">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#savePuzzle" text="Save">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#savePuzzleAs" text="Save As">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#exitApp" text="Quit">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openAbout" text="About Sudoku++" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Settings">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openScheme" text="Colour Scheme" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <SplitPane dividerPositions="0.15326797385620916, 0.6954248366013073" focusTraversable="true" prefHeight="675.0" prefWidth="1137.0" style="-fx-background-color: #eade80;">
+            <items>
+                <AnchorPane prefHeight="675.0" prefWidth="300.0">
+                    <children>
+                        <Label fx:id="variantLabel" layoutX="14.0" layoutY="360.0" prefHeight="27.0" prefWidth="139.0" text="Variant" visible="false">
+                            <font>
+                                <Font name="Trebuchet MS" size="15.0" />
+                            </font>
+                        </Label>
+                        <RadioButton fx:id="normalSudoku" layoutX="19.0" layoutY="442.0" mnemonicParsing="false" onAction="#changeRules" selected="true" text="Normal Sudoku" visible="false" />
+                        <RadioButton layoutX="19.0" layoutY="387.0" mnemonicParsing="false" onAction="#changeRules" text="X-Sudoku" visible="false" fx:id="xSudoku" />
+                        <RadioButton fx:id="kingSudoku" layoutX="19.0" layoutY="415.0" mnemonicParsing="false" onAction="#changeRules" text="King's Move Sudoku" visible="false" />
+                  <Button fx:id="addMods" layoutX="14.0" layoutY="300.0" mnemonicParsing="false" onAction="#openMods" prefHeight="30.0" prefWidth="108.0" text="Add Modifiers" visible="false">
+                     <font>
+                        <Font name="Trebuchet MS" size="13.0" />
+                     </font>
+                  </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane id="Content" fx:id="centrePane" minHeight="-1.0" minWidth="-1.0" prefHeight="584.0" prefWidth="567.0" SplitPane.resizableWithParent="false">
+                    <children>
+                        <ImageView fitHeight="450.0" fitWidth="450.0" layoutX="47.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@gridImage.png" />
+                            </image>
+                        </ImageView>
+                        <GridPane fx:id="grid" layoutX="47.0" layoutY="58.0" opacity="0.6" prefHeight="450.0" prefWidth="450.0" style="-fx-background-color: #aabbcc;">
+                        </GridPane>
+                        <Button fx:id="newPuzzle" layoutX="297.0" layoutY="517.0" mnemonicParsing="false" onAction="#generateNewPuzzle" prefHeight="35.0" prefWidth="200.0" text="Generate New Puzzle">
+                            <font>
+                                <Font name="Trebuchet MS" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="clearButton" layoutX="47.0" layoutY="517.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="35.0" prefWidth="110.0" text="Clear Grid">
+                            <font>
+                                <Font name="Trebuchet MS" size="17.0" />
+                            </font>
+                        </Button>
+                        <Label fx:id="typeLabel" layoutX="47.0" layoutY="22.0" prefHeight="25.0" prefWidth="150.0">
+                            <font>
+                                <Font name="Trebuchet MS" size="19.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="675.0" prefWidth="300.0">
+                    <children>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" style="&#10;" text="Current Puzzle Info" textAlignment="CENTER" wrapText="false">
+                            <font>
+                                <Font name="Trebuchet MS" size="19.0" />
+                            </font>
+                            <textFill>
+                                <Color red="0.624" green="0.624" blue="0.624" fx:id="x2" />
+                            </textFill>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="93.0" prefHeight="15.0" prefWidth="131.0" text="Time Spent:">
+                            <font>
+                                <Font name="Trebuchet MS" size="19.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="autocomplete" layoutX="11.0" layoutY="48.0" mnemonicParsing="false" onAction="#solvePuzzle" text="Autocomplete!" />
+                        <Label fx:id="timeTaken" layoutX="130.0" layoutY="93.0">
+                            <font>
+                                <Font name="Trebuchet MS" size="19.0" />
+                            </font>
+                        </Label>
+                        <TextArea fx:id="puzzleInfo" editable="false" layoutX="14.0" layoutY="137.0" prefHeight="263.0" prefWidth="266.0" wrapText="true">
+                            <font>
+                                <Font name="Trebuchet MS" size="15.0" />
+                            </font>
+                        </TextArea>
+                        <Button fx:id="mode" layoutX="210.0" layoutY="-2.0" mnemonicParsing="false" onAction="#switchMode" prefHeight="18.0" prefWidth="86.0" text="Play">
+                            <font>
+                                <Font name="Trebuchet MS" size="17.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="editInfo" layoutX="24.0" layoutY="430.0" mnemonicParsing="false" onAction="#openDetails" prefHeight="42.0" prefWidth="110.0" text="Edit Info" visible="false">
+                            <font>
+                                <Font name="Trebuchet MS" size="19.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding>
+        </HBox>
+    </children>
+</VBox>

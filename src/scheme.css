@@ -1,0 +1,17 @@
+
+.button {
+    -fx-background-color: #6acbe0;
+
+}
+
+.button:hover {
+    -fx-background-color: #699ccb;
+}
+
+.label {
+    -fx-font-family: "Trebuchet MS";
+}
+
+#background {
+    -fx-background-color: #67bf90;
+}

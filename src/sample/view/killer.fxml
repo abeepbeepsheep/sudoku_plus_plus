@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" prefHeight="588.0" prefWidth="521.0" stylesheets="@../../killer.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.KillerController">
+   <children>
+      <GridPane fx:id="gp" layoutX="33.0" layoutY="10.0" prefHeight="0.0" prefWidth="0.0">
+      </GridPane>
+      <Button alignment="CENTER" layoutX="333.0" layoutY="509.0" mnemonicParsing="false" onAction="#cancel" prefHeight="36.0" prefWidth="96.0" text="Cancel">
+         <font>
+            <Font name="Trebuchet MS" size="14.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="183.0" layoutY="509.0" mnemonicParsing="false" onAction="#add" prefHeight="36.0" prefWidth="96.0" text="Add">
+         <font>
+            <Font name="Trebuchet MS" size="14.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="33.0" layoutY="509.0" mnemonicParsing="false" onAction="#delete" prefHeight="36.0" prefWidth="96.0" text="Delete">
+         <font>
+            <Font name="Trebuchet MS" size="14.0" />
+         </font></Button>
+      <TextField fx:id="sum" layoutX="33.0" layoutY="466.0" prefHeight="32.0" prefWidth="91.0" promptText="Sum">
+         <font>
+            <Font name="Trebuchet MS" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

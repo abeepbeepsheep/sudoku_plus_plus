@@ -1,0 +1,28 @@
+.text-field {
+    -fx-font-family: "Trebuchet MS";
+}
+
+.text-area {
+    -fx-font-family: "Trebuchet MS";
+}
+
+.button {
+    -fx-background-color: #6acbe0;
+
+}
+
+.button:hover {
+    -fx-background-color: #699ccb;
+}
+
+.radio-button {
+    -fx-font-family: "Trebuchet MS";
+}
+
+.label {
+    -fx-font-family: "Trebuchet MS";
+}
+
+#background {
+    -fx-background-color: #67bf90;
+}

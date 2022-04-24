@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" prefHeight="311.0" prefWidth="263.0" stylesheets="@../../details.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ComputerController">
+    <children>
+        <Button layoutX="60.0" layoutY="265.0" mnemonicParsing="false" onAction="#generate" prefHeight="29.0" prefWidth="155.0" text="Generate New Puzzle">
+            <font>
+                <Font name="Trebuchet MS" size="12.0" />
+            </font>
+        </Button>
+        <VBox layoutX="60.0" layoutY="16.0" prefHeight="137.0" prefWidth="100.0" spacing="7.0">
+            <children>
+                <Label text="Difficulty" />
+                <RadioButton fx:id="easy" mnemonicParsing="false" selected="true" text="Easy">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="difficulty" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="medium" mnemonicParsing="false" text="Medium" toggleGroup="$difficulty" />
+                <RadioButton fx:id="hard" mnemonicParsing="false" text="Hard" toggleGroup="$difficulty" />
+            </children>
+        </VBox>
+        <VBox layoutX="60.0" layoutY="145.0" prefHeight="92.0" prefWidth="100.0" spacing="7.0">
+            <children>
+                <Label text="Variant" />
+                <RadioButton fx:id="sudoku" mnemonicParsing="false" selected="true" text="Sudoku">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="type" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="kingSudoku" mnemonicParsing="false" text="KingSudoku" toggleGroup="$type" />
+                <RadioButton mnemonicParsing="false" text="X-Sudoku" toggleGroup="$type" fx:id="xSudoku" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
